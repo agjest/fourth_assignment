@@ -1,0 +1,22 @@
+---
+title: "ag_comments"
+format: 
+  html: default
+  pdf: default
+editor: visual
+---
+
+-   Oppgave 33: Koden stopper pga. `ggplot(aes(x = year, y = gini_, color = NUTS3))` der gini\_ ikke er definert. Vi har ikke gini_nuts3, dvs gini på nuts3 nivå. Endret til gdp_per_capita
+-   Oppgave 44: Problemt var at plm() synes å ha problemer med list-columns. Se mitt forslag til fiks i koden.
+-   Med de små fiksene er dokumentet reproduserbart. Bra!
+-   Oppgave 1: pattern = '\[Po\]\[Oo\]\[Pp\]\[Uu\]\[Ll\]\[Aa\]\[Tt\]\[Ii\]\[Oo\]\[Nn\]' er kanskje litt «overkill» ;-). Tror ikke selv euro-stat ville komme på å skrive pOPulaTiOn, men hvem vet. Skrivefeilen i den første \[Po\] gjør at dere ikke vil få treff på *population.* Jeg tror pattern = '\[Pp\]opulation' hadde vært mer hensiktsmessig.
+-   Oppgave 6: Se forslag til kode som kanskje er litt klarere.
+-   Oppgave 11: Se forslag til løsning som bare benytter en enkel ifelse().
+-   Oppgave 12: Forskjellen i NA mellom deres løsning og oppgaveteksten skyldes hvilke zzz soner som er fjernet. Den ene løsningen er like god som den andre.
+-   Oppgave 13: Avrundingen til 2 desimaler her var ingen god ide. Bedre å gjøre dette når tabellene genereres. Det gir større fleksibilitet. Satt #\| eval: false på chunken som printer verdiene med 2 desimaler.
+-   Oppgave 23: Se forslag i koden til plottet.
+-   Oppgave 25, 26, 28 , 29: Tilsvarende forslag som oppgave 23
+-   Oppgave 29: Her vil jeg argumentere for å droppe fargekoding og legend. Nærmest håpløst å se hvilke farge som svarer til hvilken region. Har satt alle til svart.
+-   På de følgende plotene har jeg gjort samme endringer som for plot23.
+-   Forelått noen mindre endring i YAML slik at dokumentet kan produseres i ulike format.
+-   Godkjent!
